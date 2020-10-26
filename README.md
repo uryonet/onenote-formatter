@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# What's the onenote-formatter
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This script is format onenote pages.
 
 ## Available Scripts
 
