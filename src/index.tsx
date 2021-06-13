@@ -1,15 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.css'
+import { Provider } from 'react-redux'
 import { MsalProvider } from '@azure/msal-react'
-import App from './App'
 import reportWebVitals from './reportWebVitals'
 import { msalInstance } from './lib/azureConfig'
+import store from './app/store'
+import App from './App'
+import './index.css'
 
 ReactDOM.render(
   <React.StrictMode>
     <MsalProvider instance={msalInstance}>
-      <App />
+      <Provider store={store}>
+        <App />
+      </Provider>
     </MsalProvider>
   </React.StrictMode>,
   document.getElementById('root')
