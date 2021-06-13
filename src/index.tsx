@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals'
 import { msalInstance } from './lib/azureConfig'
 import store from './app/store'
 import App from './App'
-import './index.css'
+import './style/index.scss'
 
 ReactDOM.render(
   <React.StrictMode>
